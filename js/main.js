@@ -75,6 +75,12 @@ function setConnected(connected) {
 }
 
 function createNFT() {
+    if (!isConnected) {
+        toggleNotification('Error: Wallet not connected.');
+        btnCreate.classList.remove('activity');
+        return;
+    }
+
     const name = document.querySelector('#txtName').value.trim() || DEFAULT_VALUES.NFT_NAME;
     const desc = document.querySelector('#txtDescription').value.trim() || DEFAULT_VALUES.NFT_DESCRIPTION;
     const url = document.querySelector('#txtURL').value.trim() || DEFAULT_VALUES.NFT_IMAGE_URL;
@@ -101,6 +107,7 @@ function createNFT() {
     .catch(err => {
         // Couldn't create NFT
         toggleNotification('Error: Your NFT could not be minted. Please try again later.');
+        btnCreate.classList.remove('activity');
     });
 }
 
@@ -137,6 +144,7 @@ function loadNFT(nftID) {
     .catch(err => {
         // Couldn't load NFT
         toggleNotification('Error: There was a problem loading your NFT. Please try again later.');
+        btnCreate.classList.remove('activity');
     });
 };
 
