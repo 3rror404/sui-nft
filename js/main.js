@@ -6,6 +6,7 @@ const DEFAULT_VALUES = {
 const btnConnectWallet = document.querySelector('#btn-connect-wallet');
 const btnCreate = document.querySelector('#btnCreate');
 const nftCreateWrap = document.querySelector('#nft-create-wrap');
+const btnRestart = document.querySelector('#btnRestart');
 const nftCompleteWrap = document.querySelector('#nft-complete-wrap');
 const notification = document.querySelector('.notification');
 
@@ -38,6 +39,15 @@ btnConnectWallet.addEventListener('click', e => {
 btnCreate.addEventListener('click', function() {
     this.classList.add('activity');
     createNFT();
+});
+
+btnRestart.addEventListener('click', e => {
+    document.querySelector('#txtName').value = '';
+    document.querySelector('#txtDescription').value = '';
+    document.querySelector('#txtURL').value = '';
+
+    nftCreateWrap.classList.remove('d-none');
+    nftCompleteWrap.classList.add('d-none');
 });
 
 function connectWallet() {

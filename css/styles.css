@@ -32,8 +32,15 @@ body {
 }
 
 .text-huge {
-  font-size: 60px;
+  font-size: 50px;
+  line-height: 1.3;
   font-weight: 900;
+}
+@media (min-width: 992px) {
+  .text-huge {
+    font-size: 60px;
+    line-height: 1.5;
+  }
 }
 .text-huge u {
   border-bottom-width: 10px;
