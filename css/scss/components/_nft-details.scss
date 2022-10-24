@@ -1,8 +1,9 @@
 #nft-details {
     img {
+        display: block;
         width: 100%;
-        min-height: 50%;
-        background: url(/img/tail-spin.svg) center center no-repeat;
+        min-height: 300px;
+        background: url(../img/tail-spin.svg) center center no-repeat;
     }
 
     label {
