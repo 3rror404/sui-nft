@@ -1,0 +1,24 @@
+.btn {
+    border-radius: 1000px;
+
+    &.btn-primary {
+        background: var(--color-primary);
+        border-color: var(--color-primary);
+    }
+
+    .activity-indicator {
+        display: none;
+        width: 30px;
+        height: 30px;
+    }
+
+    &.activity {
+        .activity-indicator {
+            display: block;
+        }
+
+        span {
+            display: none;
+        }
+    }
+}

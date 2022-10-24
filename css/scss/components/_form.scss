@@ -1,0 +1,21 @@
+
+.form {
+    label {
+        display: block;
+        margin-bottom: var(--spacing-sm);
+    }
+    
+    input {
+        font-size: 1rem;
+        border: var(--border);
+        border-radius: var(--border-radius);
+        padding: var(--box-padding);
+        background: var(--bg-primary);
+        display: block;
+        width: 100%;
+    }
+
+    .form-group {
+        margin-bottom: var(--spacing);
+    }
+}

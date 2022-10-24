@@ -1,0 +1,16 @@
+#nft-details {
+    img {
+        width: 100%;
+        min-height: 50%;
+        background: url(/img/tail-spin.svg) center center no-repeat;
+    }
+
+    label {
+        opacity: .6;
+    }
+
+    .name {
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+}

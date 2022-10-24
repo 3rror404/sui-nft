@@ -1,0 +1,36 @@
+.notifications {
+    // display: flex;
+    // align-items: center;
+    height: 0;
+    text-align: center;
+
+    .notification {
+        display: inline-flex;
+        padding: var(--box-padding) calc(var(--box-padding) * 2);
+        align-items: center;
+        background: #FFF;
+        border-radius: 1000px;
+        //margin: 0 auto;
+        // position: fixed;
+        // left: 50%;
+        // top: 110vh;
+        //opacity: 0;
+        box-shadow: var(--box-shadow);
+        transition: all 1s ease;
+        transform: translateY(100%);
+        max-width: 80vw;
+
+        &.active {
+            transform: translateY(-120px);
+            //opacity: 1;
+        }
+
+        .controls {
+            margin-left: .5rem;
+        }
+
+        .message {
+            text-align: left;
+        }
+    }
+}

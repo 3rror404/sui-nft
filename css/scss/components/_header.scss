@@ -1,0 +1,15 @@
+.header {
+    display: flex;
+    align-items: center;
+    padding: var(--box-padding);
+
+    h1 {
+        font-size: 40px;
+        margin-right: auto;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+}
