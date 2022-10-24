@@ -1,7 +1,7 @@
 const DEFAULT_VALUES = {
     NFT_NAME: "Example NFT",
-    NFT_DESCRIPTION: "Minted at https://XXXXX.github.io",
-    NFT_IMAGE_URL: "https://pkt.watch/sui/img/sui-nft-example.jpg"
+    NFT_DESCRIPTION: "Minted at https://3rror404.github.io",
+    NFT_IMAGE_URL: "https://3rror404.github.io/sui-nft/img/sui-nft-example.jpg"
 }
 const btnConnectWallet = document.querySelector('#btn-connect-wallet');
 const btnCreate = document.querySelector('#btnCreate');
